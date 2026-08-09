@@ -11,7 +11,7 @@ Funding Declaration: No funding was received
 
 ## Abstract
 
-Building upon the gradient-driven multiplicative entropy framework proposed by Zou (2025) [3], this paper reveals the intrinsic mathematical constraint structure between the first and second laws of thermodynamics. In this framework, the entropy of a system is defined as \( S = \prod_i m_i \), where \( m_i \) denotes the quantized energy value carried by each discrete node, subject to the strict conservation of total energy \( E = \sum_i m_i \). Energy transfer follows a rigorous gradient-driven rule: energy flows exclusively from higher-valued nodes to lower-valued nodes \( (m_i > m_j + 1) \). This paper demonstrates that, under this multiplicative entropy formulation, the first law is not merely an independent postulate standing alongside the second law, but rather serves as the constraint precondition for the monotonic increase of entropy—energy conservation, via the arithmetic-geometric mean inequality, directly yields the upper bound of entropy \( S \leq (E/N)^N \), while the gradient-driven rule ensures that every step of energy transfer strictly increases the multiplicative entropy. In this manner, the two laws of thermodynamics are unified into a single dynamical process—namely, gradient-driven evolution under a conservation constraint—wherein entropy increase no longer depends on probabilistic or statistical assumptions, but is a necessary consequence jointly determined by energy conservation and the existence of energy gradients.
+Building upon the gradient-driven multiplicative entropy framework proposed by Zou (2025)[3], this paper reveals the intrinsic mathematical constraint structure between the first and second laws of thermodynamics. In this framework, the entropy of a system is defined as S = ∏ᵢ mᵢ, where mᵢ denotes the quantized energy value carried by each discrete node, subject to the strict conservation of total energy E = ∑ᵢ mᵢ. Energy transfer follows a rigorous gradient-driven rule: energy flows exclusively from higher-valued nodes to lower-valued nodes (mᵢ > mⱼ + 1). This paper demonstrates that, under this multiplicative entropy formulation, the first law is not merely an independent postulate standing alongside the second law, but rather serves as the constraint precondition for the monotonic increase of entropy—energy conservation, via the arithmetic-geometric mean inequality, directly yields the upper bound of entropy S ≤ (E/N)ᴺ, while the gradient-driven rule ensures that every step of energy transfer strictly increases the multiplicative entropy. In this manner, the two laws of thermodynamics are unified into a single dynamical process—namely, gradient-driven evolution under a conservation constraint—wherein entropy increase no longer depends on probabilistic or statistical assumptions, but is a necessary consequence jointly determined by energy conservation and the existence of energy gradients.
 
 **Keywords**: multiplicative entropy; gradient-driven; energy conservation; first law of thermodynamics; second law of thermodynamics; non-probabilistic entropy; constraint-dynamics relation
 
@@ -21,13 +21,13 @@ Building upon the gradient-driven multiplicative entropy framework proposed by Z
 
 The first law of thermodynamics (energy conservation) and the second law (entropy increase) are two of the most fundamental and universal laws in physics. Since the establishment of thermodynamics in the nineteenth century, these two laws have been regarded as mutually independent, basic postulates: the first law asserts that energy can neither be created nor destroyed, while the second law asserts that the entropy of an isolated system never decreases. Although both laws operate simultaneously in physical processes, classical thermodynamics does not provide a precise mathematical constraint relation between them.
 
-In traditional statistical mechanics, entropy is defined as \( S = k_B \ln \Omega \), where \( \Omega \) is the number of microstates of the system. This definition has achieved great success in macroscopic thermodynamics, yet it also brings a fundamental epistemological problem: the value of \( \Omega \) depends on how the observer defines the boundary between "micro" and "macro", depends on the choice of coarse-graining scale, and depends on which degrees of freedom are considered "relevant" and which are "negligible". In other words, the value of statistical entropy depends in part on the observer's level of description, rather than being entirely determined by the physical state of the system itself. This leads to a profound question: does statistical entropy measure the physical state of the system itself, or the observer's missing information?
+In traditional statistical mechanics, entropy is defined as S = k_B ln Ω, where Ω is the number of microstates of the system. This definition has achieved great success in macroscopic thermodynamics, yet it also brings a fundamental epistemological problem: the value of Ω depends on how the observer defines the boundary between "micro" and "macro", depends on the choice of coarse-graining scale, and depends on which degrees of freedom are considered "relevant" and which are "negligible". In other words, the value of statistical entropy depends in part on the observer's level of description, rather than being entirely determined by the physical state of the system itself. This leads to a profound question: does statistical entropy measure the physical state of the system itself, or the observer's missing information?
 
 More importantly, the definition of statistical entropy does not contain the concept of "energy gradient". It tells us that a uniform distribution is the maximum entropy state, but it does not tell us how the system approaches uniformity step by step, what the path of each energy transfer is, or what the magnitude of the gradient is at each step. These questions cannot be directly answered by statistical entropy, because its definition does not contain the physical quantity of "gradient".
 
-However, all real dynamical processes in nature—heat conduction, diffusion, chemical reactions, and electric currents—are driven by a unified physical quantity: the energy gradient. Heat flows from high temperature to low temperature; matter flows from high concentration to low concentration; charge flows from high potential to low potential; mechanical systems move from high potential energy to low potential energy. In all known natural processes, the flow of energy from higher to lower is the sole source of irreversibility.
+However, all real dynamical processes in nature—heat conduction, diffusion, chemical reactions, and electric currents—are driven by a unified physical quantity: the energy gradient. Heat flows from high temperature to low temperature; matter flows from high concentration to low concentration; charge flows from high potential to low potential; mechanical systems move from high potential energy to low potential energy. In all known natural processes, the flow of energy from higher to lower is the sole source of irreversibility.
 
-This paper, based on the gradient-driven multiplicative entropy framework proposed by Zou (2025), aims to answer the following core question: Is there a precise mathematical constraint relation between the first and second laws of thermodynamics? If so, what is the specific structure of this relation?
+This paper, based on the gradient-driven multiplicative entropy framework proposed by Zou (2025), aims to answer the following core question: Is there a precise mathematical constraint relation between the first and second laws of thermodynamics? If so, what is the specific structure of this relation?
 
 We will demonstrate that, under the definition of multiplicative entropy, the first law (energy conservation) is not merely a prerequisite for the second law (entropy increase), but directly yields the mathematical upper bound of entropy via the arithmetic-geometric mean inequality, thereby providing a non-probabilistic, necessary mathematical foundation for the monotonic increase of the second law.
 
@@ -35,94 +35,50 @@ We will demonstrate that, under the definition of multiplicative entropy, the fi
 
 ## 2. Definition of Multiplicative Entropy and the Gradient-Driven Rule
 
-### 2.1 Basic Setting of the Discrete Node System
+2.1 Basic Setting of the Discrete Node System
 
-Consider a closed system consisting of \( N \) nodes. Each node carries a certain amount of energy, with energy quantized in units of Planck's constant \( h \):
-
-\[
-m_i \in \mathbb{N}^+
-\]
-
-where \( m_i \) is the energy value carried by the \( i \)-th node (in units of \( h \)).
-
+Consider a closed system consisting of N nodes. Each node carries a certain amount of energy, with energy quantized in units of Planck's constant h:
+mᵢ ∈ ℕ⁺
+where mᵢ is the energy value carried by the i-th node (in units of h).
 The total energy of the system is strictly conserved:
-
-\[
-E = \sum_i m_i = \text{constant}
-\]
-
+E = ∑ᵢ mᵢ = constant
 Energy transfer between nodes is allowed only between adjacent nodes, one unit at a time, and only when an energy gradient exists:
+Transfer condition:
+mᵢ > mⱼ + 1
+Transfer rule:
+mᵢ → mᵢ − 1,  mⱼ → mⱼ + 1
+Here "1" represents one unit of Planck's constant h. These rules constitute the complete dynamical rules of the system—no probability, no ensembles, no randomness, no external driving, and no artificially chosen coarse-graining scale. The evolutionary direction of the system at each step is entirely determined by the current energy gradient distribution.
 
-**Transfer condition**:
+2.2 Definition of Multiplicative Entropy
 
-\[
-m_i > m_j + 1
-\]
-
-**Transfer rule**:
-
-\[
-m_i \rightarrow m_i - 1, \quad m_j \rightarrow m_j + 1
-\]
-
-Here "1" represents one unit of Planck's constant \( h \). These rules constitute the complete dynamical rules of the system—no probability, no ensembles, no randomness, no external driving, and no artificially chosen coarse-graining scale. The evolutionary direction of the system at each step is entirely determined by the current energy gradient distribution.
-
-### 2.2 Definition of Multiplicative Entropy
-
-Define the entropy of the system as the product of all node energy values:
-
-\[
-S = \prod_i m_i
-\]
-
+Define the entropy of the system as the product of all node energy values:
+S = ∏ᵢ mᵢ
 This definition has the following characteristics:
+Does not depend on probability distributions;
+Does not depend on ensemble assumptions;
+Does not depend on coarse-graining operations;
+Does not depend on logarithmic approximation;
+Is uniquely determined by the current energy distribution;
+Is a positive integer.
+More importantly, it directly reflects the outcome of gradient-driven evolution.
 
-- Does not depend on probability distributions;
-- Does not depend on ensemble assumptions;
-- Does not depend on coarse-graining operations;
-- Does not depend on logarithmic approximation;
-- Is uniquely determined by the current energy distribution;
-- Is a positive integer.
+2.3 Calculation of Entropy Change
 
-More importantly, it directly reflects the outcome of gradient-driven evolution.
-
-### 2.3 Calculation of Entropy Change
-
-Before and after each energy transfer, the change in entropy can be precisely calculated. Let the energies of the two participating nodes before transfer be \( a \) and \( b \) (with \( a > b + 1 \)), and after transfer become \( a - 1 \) and \( b + 1 \). The ratio of entropy values is:
-
-\[
-\frac{S'}{S} = \frac{(a - 1)(b + 1)}{a \cdot b}
-\]
-
+Before and after each energy transfer, the change in entropy can be precisely calculated. Let the energies of the two participating nodes before transfer be a and b (with a > b + 1), and after transfer become a − 1 and b + 1. The ratio of entropy values is:
+S′ / S = (a − 1)(b + 1) / (a · b)
 Expanding:
-
-\[
-\frac{S'}{S} = 1 + \frac{a - b - 1}{a \cdot b}
-\]
-
-Since the transfer condition is \( a > b + 1 \), i.e., \( a - b - 1 > 0 \), and \( a, b > 0 \), we have:
-
-\[
-\frac{S'}{S} > 1
-\]
-
+S′ / S = 1 + (a − b − 1) / (a · b)
+Since the transfer condition is a > b + 1, i.e., a − b − 1 > 0, and a, b > 0, we have:
+S′ / S > 1
 That is:
+S′ > S
+Every legitimate energy transfer necessarily leads to a strict increase in multiplicative entropy. The magnitude of the entropy increase is directly related to the energy gradient a − b before the transfer—the larger the gradient, the greater the entropy increase.
 
-\[
-S' > S
-\]
-
-Every legitimate energy transfer necessarily leads to a strict increase in multiplicative entropy. The magnitude of the entropy increase is directly related to the energy gradient \( a - b \) before the transfer—the larger the gradient, the greater the entropy increase.
-
-### 2.4 Logarithmic Relation to Classical Entropy
+2.4 Logarithmic Relation to Classical Entropy
 
 Taking the logarithm of multiplicative entropy:
-
-\[
-\ln S = \sum_i \ln m_i
-\]
-
-Under conditions where the energy distribution is relatively uniform, \( \ln S \) can be related to the traditional Boltzmann entropy \( S = k_B \ln \Omega \) through Stirling's approximation or other statistical methods. This indicates that multiplicative entropy can recover classical thermodynamic results in the appropriate macroscopic limit, while simultaneously providing a finer description for discrete systems.
+ln S = ∑ᵢ ln mᵢ
+Under conditions where the energy distribution is relatively uniform, ln S can be related to the traditional Boltzmann entropy S = k_B ln Ω through Stirling's approximation or other statistical methods. This indicates that multiplicative entropy can recover classical thermodynamic results in the appropriate macroscopic limit, while simultaneously providing a finer description for discrete systems.
 
 ---
 
@@ -130,43 +86,31 @@ Under conditions where the energy distribution is relatively uniform, \( \ln S \
 
 ### 3.1 The Upper Bound of Multiplicative Entropy: Application of the AM-GM Inequality
 
-This section proves the core proposition: energy conservation directly yields the mathematical upper bound of multiplicative entropy.
+This section proves the core proposition: energy conservation directly yields the mathematical upper bound of multiplicative entropy.
 
-For \( N \) positive real numbers \( m_1, m_2, \ldots, m_N \), the arithmetic-geometric mean inequality (AM-GM inequality) gives:
+For N positive real numbers m₁, m₂, ..., m_N, the arithmetic-geometric mean inequality (AM-GM inequality) gives:
 
-\[
-\frac{m_1 + m_2 + \cdots + m_N}{N} \geq (m_1 \cdot m_2 \cdots m_N)^{1/N}
-\]
+(m₁ + m₂ + ... + m_N) / N ≥ (m₁ · m₂ · ... · m_N)¹/ᴺ
 
 That is:
 
-\[
-\frac{E}{N} \geq S^{1/N}
-\]
+E / N ≥ S¹/ᴺ
 
-Raising both sides to the \( N \)-th power:
+Raising both sides to the N-th power:
 
-\[
-\left(\frac{E}{N}\right)^N \geq \prod_i m_i = S
-\]
+(E / N)ᴺ ≥ ∏ᵢ mᵢ = S
 
 Therefore:
 
-\[
-S \leq \left(\frac{E}{N}\right)^N
-\]
+S ≤ (E / N)ᴺ
 
-The condition for equality (the equality condition of the AM-GM inequality):
+The condition for equality (the equality condition of the AM-GM inequality):
 
-\[
-m_1 = m_2 = \cdots = m_N = \frac{E}{N}
-\]
+m₁ = m₂ = ... = m_N = E / N
 
 That is, when the system energy reaches a perfectly uniform distribution, the multiplicative entropy attains its maximum value:
 
-\[
-S_{\text{max}} = \left(\frac{E}{N}\right)^N
-\]
+S_max = (E / N)ᴺ
 
 ### 3.2 Structural Analysis of the Constraint Relation
 
