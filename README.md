@@ -142,23 +142,17 @@ In this framework, the maximum entropy value \( S_{\text{max}} = (E/N)^N \) is d
 
 ### 3.4 Numerical Example
 
-Consider a system with \( N = 4 \) nodes and total energy \( E = 12 \). The upper bound of multiplicative entropy is:
+Consider a system with N = 4 nodes and total energy E = 12. The upper bound of multiplicative entropy is:
 
-\[
-S_{\text{max}} = \left(\frac{12}{4}\right)^4 = 3^4 = 81
-\]
+S_max = (12/4)⁴ = 3⁴ = 81
 
-When the system is in a non-uniform state \([3, 1, 5, 3]\):
+When the system is in a non-uniform state [3, 1, 5, 3]:
 
-\[
-S = 3 \times 1 \times 5 \times 3 = 45
-\]
+S = 3 × 1 × 5 × 3 = 45
 
-Under the gradient-driven rule, through successive energy transfers, the system may evolve to the uniform state \([3, 3, 3, 3]\):
+Under the gradient-driven rule, through successive energy transfers, the system may evolve to the uniform state [3, 3, 3, 3]:
 
-\[
-S = 3 \times 3 \times 3 \times 3 = 81 = S_{\text{max}}
-\]
+S = 3 × 3 × 3 × 3 = 81 = S_max
 
 The entropy values at each step are:
 
@@ -178,11 +172,9 @@ It is worth noting that, since energy is transferred in integer quanta, not all 
 
 ### 4.1 Equivalence of the "Maximum Entropy Path" and the "Maximum Gradient Path"
 
-In this framework, each step of energy transfer follows the direction of the maximum energy gradient. The ratio of entropy before transfer \( S \) to entropy after transfer \( S' \) is:
+In this framework, each step of energy transfer follows the direction of the maximum energy gradient. The ratio of entropy before transfer S to entropy after transfer S′ is:
 
-\[
-\frac{S'}{S} = 1 + \frac{a - b - 1}{a \cdot b}
-\]
+S′ / S = 1 + (a − b − 1) / (a · b)
 
 This expression directly shows: the larger the energy gradient, the greater the entropy increase. Therefore, in this framework, the "maximum entropy path" and the "maximum gradient path" are equivalent—the system evolves along the direction of maximum entropy increase, which is precisely the direction of maximum energy gradient.
 
@@ -228,15 +220,15 @@ This difference directly affects our understanding of "irreversibility". In this
 
 ### 5.1 Recovery in the Macroscopic Limit
 
-Although this framework is based on a discrete node network, in the appropriate macroscopic limit (number of nodes \( N \to \infty \), energy quantum \( h \to 0 \)), multiplicative entropy can recover the results of classical thermodynamics.
+Although this framework is based on a discrete node network, in the appropriate macroscopic limit (number of nodes N → ∞, energy quantum h → 0), multiplicative entropy can recover the results of classical thermodynamics.
 
 Taking the logarithm of multiplicative entropy:
 
-\[
-\ln S = \sum_i \ln m_i
-\]
+ln S = ∑ᵢ ln mᵢ
 
-Under conditions where the energy distribution is relatively smooth, the standard methods of statistical mechanics can establish a correspondence between \( \ln S \) and the Boltzmann entropy \( S_{\text{Boltzmann}} = k_B \ln \Omega \). The monotonic increase of multiplicative entropy is preserved under logarithmic transformation, and is therefore consistent with the classical principle of entropy increase.
+Under conditions where the energy distribution is relatively smooth, the standard methods of statistical mechanics can establish a correspondence between ln S and the Boltzmann entropy S_Boltzmann = k_B ln Ω. 
+
+The monotonic increase of multiplicative entropy is preserved under logarithmic transformation, and is therefore consistent with the classical principle of entropy increase.
 
 ### 5.2 Reinterpretation of Classical Thermodynamic Concepts
 
@@ -266,7 +258,7 @@ The fifth condition is not a necessary requirement for the definition of multipl
 
 This paper, based on the gradient-driven multiplicative entropy framework proposed by Zou (2025), has demonstrated the existence of a precise mathematical constraint structure between the first and second laws of thermodynamics:
 
-The first law (energy conservation) \( E = \sum_i m_i = \text{constant} \), as the constraint precondition, directly yields the mathematical upper bound of multiplicative entropy \( S = \prod_i m_i \) via the arithmetic-geometric mean inequality: \( S \leq (E/N)^N \). The second law (entropy increase) is then the necessary dynamical output of the gradient-driven rule under this constraint—every legitimate step of energy transfer strictly increases the multiplicative entropy until reaching the maximum value bounded by the AM-GM inequality.
+The first law (energy conservation) E = ∑ᵢ mᵢ = constant, as the constraint precondition, directly yields the mathematical upper bound of multiplicative entropy S = ∏ᵢ mᵢ via the arithmetic-geometric mean inequality: S ≤ (E/N)ᴺ. The second law (entropy increase) is then the necessary dynamical output of the gradient-driven rule under this constraint—every legitimate step of energy transfer strictly increases the multiplicative entropy until reaching the maximum value bounded by the AM-GM inequality.
 
 The core contributions of this framework are:
 
