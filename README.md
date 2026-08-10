@@ -275,6 +275,6 @@ From an epistemological perspective, this framework reduces the two laws of ther
 
 [1]Max Planck. (1901). Ueber das Gesetz der Energieverteilung im Normalspectrum. Annalen der Physik. https://doi.org/10.1002/andp.19013090310 
 
-[2]Annila A(2025), Comprehensible dynamics of quanta: from the quantum of action to the 2nd law of thermodynamics. Eur. Phys. J. Plus 140, 28 2025. https://doi.org/10.1140/epjp/s13360-025-05970 
+[2]Annila A(2025), Comprehensible dynamics of quanta: from the quantum of action to the 2nd law of thermodynamics. Eur. Phys. J. Plus 140, 28 2025.https://doi.org/10.1140/epjp/s13360-025-05970-5  
 
 [3]Zou,  Z. K. (2025). The Thermodynamic Arrow of Time in a Double-Layer Topology-Invariant Chiral Space with Geometric (GR) and Gauge (QFT) Degrees of Freedom :Time-Entropy Mapping; Mass-Gravity Duality; Metric-Frequency Mirroring. Preprints. https://doi.org/10.20944/preprints202505.0270.v12 
