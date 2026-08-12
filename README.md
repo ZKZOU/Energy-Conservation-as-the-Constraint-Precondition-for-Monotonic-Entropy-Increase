@@ -27,6 +27,10 @@ More importantly, the definition of statistical entropy does not contain the con
 
 However, all real dynamical processes in nature—heat conduction, diffusion, chemical reactions, and electric currents—are driven by a unified physical quantity: the energy gradient. Heat flows from high temperature to low temperature; matter flows from high concentration to low concentration; charge flows from high potential to low potential; mechanical systems move from high potential energy to low potential energy. In all known natural processes, the flow of energy from higher to lower is the sole source of irreversibility.
 
+The gradient-driven dynamics proposed here aligns with the thermodynamic formulation of time by Tuisku, Pernu, and Annila (2009), who describe physical evolution as a process driven by energy dispersal.
+
+Graham, C., & Tokieda, T. (2020). Their work revealed the intrinsic connection between thermodynamics and the AM-GM inequality, which shares part of the mathematical structure underlying the multiplicative entropy framework I subsequently proposed.
+
 This paper, based on the gradient-driven multiplicative entropy framework proposed by Zou (2025), aims to answer the following core question: Is there a precise mathematical constraint relation between the first and second laws of thermodynamics? If so, what is the specific structure of this relation?
 
 We will demonstrate that, under the definition of multiplicative entropy, the first law (energy conservation) is not merely a prerequisite for the second law (entropy increase), but directly yields the mathematical upper bound of entropy via the arithmetic-geometric mean inequality, thereby providing a non-probabilistic, necessary mathematical foundation for the monotonic increase of the second law.
@@ -278,3 +282,7 @@ From an epistemological perspective, this framework reduces the two laws of ther
 [2]Annila A(2025), Comprehensible dynamics of quanta: from the quantum of action to the 2nd law of thermodynamics. Eur. Phys. J. Plus 140, 28 2025.https://doi.org/10.1140/epjp/s13360-025-05970-5  
 
 [3]Zou,  Z. K. (2025). The Thermodynamic Arrow of Time in a Double-Layer Topology-Invariant Chiral Space with Geometric (GR) and Gauge (QFT) Degrees of Freedom :Time-Entropy Mapping; Mass-Gravity Duality; Metric-Frequency Mirroring. Preprints. https://doi.org/10.20944/preprints202505.0270.v12 
+
+[4]Graham, C., & Tokieda, T. (2020). An Entropy Proof of the Arithmetic Mean–Geometric Mean Inequality. The American Mathematical Monthly, 127(6), 545–546. https://doi.org/10.1080/00029890.2020.1738827 
+
+[5]Petri Tuisku, Tuomas K Pernu, Arto Annila(2009); In the light of time. Proc. A 1 April 2009; 465 (2104): 1173–1198. https://doi.org/10.1098/rspa.2008.0494 
